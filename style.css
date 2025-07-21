@@ -1,0 +1,57 @@
+::selection {
+  background-color: black; /* 선택 영역 배경색 */
+  color: white;              /* 선택된 글자 색 */
+}
+
+* {
+  margin: 0;
+  margin-top: -3px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.empty-container {
+  height: 100vh;
+  position: relative;
+}
+
+p {
+  color: darkgray;
+  font-family: "Noto Sans Kr", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.link-text {
+  text-decoration: underline;
+}
+
+.link-text:hover {
+  color: black;
+}
+
+a {
+  color: inherit;
+}
+
+.last-text {
+  position: absolute;
+  bottom: 0 !important;
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
