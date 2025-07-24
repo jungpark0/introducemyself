@@ -16,6 +16,7 @@
 }
 
 p {
+  padding: 0;
   color: darkgray;
   font-family: "Noto Sans Kr", sans-serif;
   font-size: 3rem;
@@ -55,3 +56,12 @@ a {
   transform: translateY(0);
 }
 
+@media (max-width: 767px) {
+  p {
+    font-size: 2rem;
+    word-break: normal;
+  }
+  * {
+    margin-top: -1px;
+  }
+}
